@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* background-image: url('recipe.jpg'); */
+        }
+
+        .box {
+            border: 2px solid rgb(11, 11, 16);
+            width: auto;
+            height: auto;
+            padding: 280px;
+            background-image: url("frame7.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            /* line-height: 2em; */
+        }
+
+        .box1 {
+            /* border: 2px solid black; */
+            padding: 80px;
+            width: 700px;
+            height: 2100px;
+            margin: 70px auto;
+            box-shadow: 1px 1px 30px 20px rgba(10, 24, 24, 78%);
+            /* line-height: 2em;  */
+            
+        }
+
+        /* .img1 {
+            float: right;
+            border: 1.5px solid black;
+            width: 100px;
+            height: 220px;
+            border-radius: 10px;
+            transition: all 2s linear;
+            overflow: hidden;
+        }
+
+        .img1:hover {
+            transform: scale(1.1);
+        } */
+
+        .navlist {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            /* font-size: 20px; */
+            /* text-decoration: none; */
+        }
+
+        .navbar {
+            /* border: 2px solid black; */
+            width: auto;
+            height: 340px;
+            padding: 200px;
+            background-image: url("heading.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            /* background-color: #0c1e2e;
+            background-image: linear-gradient(160deg, #0c1e2e 0%, #80D0C7 100%); */
+
+            /* margin: 30px; */
+        }
+
+        .name a {
+            text-decoration: none;
+            color: rgba(246, 252, 255, 0.806);
+            font-size: 30px;
+            /* justify-content: space-between; */
+        }
+
+        .name {
+            display: flex;
+            gap: 20px;
+        }
+        .name a:hover
+        {
+            color: rgba(138, 179, 77, 0.714);
+        }
+
+        .nav {
+            color: aliceblue;
+            font-size: 35px;
+            font-family: 'Rubik Doodle Shadow', system-ui;
+        }
+        .footer
+        {
+            /* margin: 50px; */
+            font-size: large;
+            width: 100%;
+            height: 300px;
+            padding: 80px;
+            color: aliceblue;
+            background-color: #0c1e2e;
+            background-image: linear-gradient(160deg, #0c1e2e 0%, #80D0C7 100%);
+
+        }
+        /* .recipe1
+        {
+            width: 70px;
+            height: 70px;
+            border-radius: 10px;
+            opacity: 0;
+            transition: all 2s ease-in;
+        }
+        .recipe1:hover{
+            transform: scale(1.2);
+            opacity: 1;
+        } */
+        .list1
+        {
+            display: flex;
+            gap: 10px;
+        }
+        .overview1 a
+        {
+            border: 2px solid black;
+            list-style-type: none;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 40px;
+            padding: 10px;
+            margin: 10px;
+            background-color: #0c1e2e;
+            color: #eaeaeaf7;
+            font-size:medium;
+            /* position: -webkit-sticky; */
+            position:sticky;
+            top:0;
+        }
+        .overview1 a:hover{
+            border: 2px solid rgb(35, 101, 108);
+            background-color: rgba(37, 127, 154, 0.762);
+        }
+        .overview1 a:active
+        {
+            border: 2px solid rgb(35, 101, 108);
+            background-color: rgba(37, 127, 154, 0.762);
+        }
+        .overview2
+        {
+            list-style: none;
+        }
+        .item1 img 
+        {
+            border: 2px solid black;
+            width: 500px;
+            height: 300px;
+            border-radius: 10px;
+        }
+        .times img
+        {
+            /* border: 2px solid black; */
+            width: 120px;
+            height: 100px;
+            /* display: flex; */
+        }
+        .list3 {
+            list-style: none;
+           display: flex; 
+           gap: 46px;
+           color: rgba(10, 49, 28, 0.983);
+        }
+        .list4 {
+            list-style: none;
+           display: flex; 
+           gap: 90px;
+           color: rgb(255, 255, 255);
+        }
+        .time 
+        {
+            border: 2px dotted black;
+            background-color: rgba(59, 79, 82, 0.503);
+            padding: 15px;
+        }
+        .Ingredientsbox
+        {
+            padding: 90px;
+            width: 500px;
+            height: 560px;
+            margin: 70px auto;
+            box-shadow: 1px 1px 30px 20px rgba(10, 24, 24, 78%);
+            /* background-image: url("recipe.jpg");  */
+            background-image: url("menu.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            font-weight: 600;
+            font-size: 20px;
+            font-family: 'Rubik Doodle Shadow', system-ui;
+            text-align: center;
+        }
+         .img2
+        {
+            background-image: url("food\ cooking.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%; 
+            line-height: 2em;
+            /* float: right; */
+        } 
+        .item1 h1{
+            font-family: 'Fuggles', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Rubik Maps', system-ui;
+color: rgba(21, 99, 99, 0.783);
+        }
+        .item1 h1:hover{
+            color: rgba(13, 18, 18, 0.803);
+        }
+        .img2 ol{
+            font-size: large;
+            font-weight: 400;
+            font-family: 'Rubik Doodle Shadow', system-ui;
+        }
+        .para p{
+            font-size: 20px;
+            font-family: 'Rubik Doodle Shadow', system-ui;
+            line-height: 2em;
+        }
+        /* .list1 p 
+        {
+            font-family: 'Rubik Doodle Shadow', system-ui;
+        } */
+        .Ingredientsbox ul{
+            list-style: none;
+        }
+        .Ingredientsbox h2{
+            color: aliceblue;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <nav>
+                <ul class="navlist">
+                    <li class="list1">
+                <p class="nav">Nikhitha's Recipe</p>
+                    <!-- <img class="recipe1" src="recipe.jpg"> -->
+                    </li>
+                    <li class="list">
+                        <div class="name">
+                            <a href="#home">Home</a>
+                            <a href="http://127.0.0.1:5500/about.html">About</a>
+                            <a href="#contact">Contact</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <a name="home"></a>
+        <div class="box">
+            <div class="box1">
+                <div class="item1">
+                    <h1>Gulab Jamun Recipe</h1>
+                    <br><br>
+                    <nav>
+                        <ul class="overview2">
+                            <li class="overview1">
+                                <div>
+                                    <a href="#overview">Overview</a>
+                                    <a href="#cooktime"> Cook Time</a>
+                                    <a href="#ingredients">Ingredients</a>
+                                    <a href="#method">Method</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                    <br><br>
+                    <img src="gulab jam.jpg">
+                    <br><br>
+                    <div class="para"><p>
+                        <a name="overview">
+                            Gulab Jamun is one of the most popular Indian sweet. These tiny sweet balls are made with khoya, flour and dipped in sugar syrup infused with saffron.</a>
+                    </p></div>
+                    <br>
+                    <a name="cooktime"></a>
+                    <div class="time">
+                        <div class="times">
+                            <img src="total cooking time.avif">
+                            <img src="prep time.jpg">
+                            <img src="cooking time.jpg">
+                            <img src="recipe serving.avif">
+                            <ul class="list3">
+                                <li>Total Cook Time</li>
+                                <li>Prep Time </li>
+                                <li>Cook Time</li>
+                                <li>Recipe Servings</li>
+                            </ul>
+                            <ul class="list4">
+                                <li>40 mins</li>
+                                <li>10 mins </li>
+                                <li>30 mins</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p>
+                         <a name="ingredients"></a>
+                            <div class="Ingredientsbox"><h2>Ingredients of Gulab Jamun</h2>
+                                <br>
+                                <ul>
+                                    <li>300 gms khoya</li><hr><br>
+                                    <li>3 Tbsp flour</li><hr><br>
+                                    <li>3 Tbsp sugar</li><hr><br>
+                                    <li>1/2 liter water</li><hr><br>
+                                    <li>Saffron, a pinch</li><hr><br>
+                                    <li>200 gms refined oil</li><hr>
+                                </ul>
+                            </div>
+                    </p>
+                    
+                    <a name="method"></a>
+                    <div class="img2">
+                        <h2>
+                            How to Make Gulab Jamun</h2><br><hr>
+                        <ol>
+                            <li>In a bowl, add khoya and flour mix them together.Make a round ball shape gulab jamun out of it.</li><br><hr><br>
+                            <li>Make sugar syrup with 3 table spoon of sugar and 1/2 liter water. Add little saffron to it.</li><br><hr><br>
+                            <li>Deep fry the gulab jamun in pan with oil.Add the fried gulab jamun into the sugar syrup.Serve hot.</li><br><hr><br>
+                        </ol>
+                    </div>
+                </div>
+                <!-- <div class="item2"></div> -->
+            </div>
+        </div>
+        <footer>
+            <a name="contact"></a>
+            <div class="footer">
+                <p>
+                    Copyright &copy; Nikhitha's Dhaaba Pvt Ltd 2024 All Rights Reserved 
+                </p><br>
+                <h3>For any other quaries and want to know about making food Contact us</h3><br>
+                <ul>
+                    <li>what's app number:<a href="number">9381197809</a></li><br>
+                    <li>Email Id:<a href="email">nikhitha150204@gmail.com</a></li><br>
+                    <li>Follow us in linkedin <a href="linkedin"> www.linkedin.com/in/banoth-nikhitha-647027243</a></li><br>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
